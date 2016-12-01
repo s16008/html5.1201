@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ほんっとにはじめてのHTML（13-2_3）背景に画像を入れてみよう_JPEGを使って</title>
+<meta name="description" content="はじめてのHTML。サイトの背景に画像を入れてみよう">
+<meta name="keywords" content="ほんっとにはじめてのHTML,CSS3,html5">
+<link rel="stylesheet" type="text/css" href="css/3_ytile.css" media="screen, tv, projection">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<header><h1>背景に画像を入れる [3]<span>-縦(Y)方向リピート</span></h1>
+background: #E6EE8A url(../img/tile_y.jpg) <strong>repeat-y</strong> center top;
+</header>
+<div id="container">
+<p>
+＜body＞に、JPEGファイルをY軸方向にリピートして貼っています。
+</p>
+
+<p>
+「<strong>repeat-y</strong>」と指定する事によって、<br>
+画像がY軸方向（縦方向）にリピートされます。
+</p>
+<p>
+位置は、X軸（横方向）において「<strong>center</strong>」と指定しています。<br>
+#container がセンター揃え（margin: 0px auto;）になっているので、<br>
+背景画像もセンター揃えにする事が必須です。
+</p>
+
+<p style="margin-top:3em">
+背景の画像はこれ（tile_y.jpg）<br>
+<span>この画像はグラデーションなので、JPEGにしています。</span><br>
+<a href="img/tile_y.jpg" target="_blank"><img src="img/tile_y.jpg" alt="このページの背景画像" width="220" height="10" border="0" style="margin:1em 0; border:solid 1px #999;"><br>
+<span>クリックすると実サイズで画像が開きます(別ウィンドウ)</span></a><br><br>
+</p>
+
+
+<pre><span class="green">[ このページのHTMLソースは、<a href="honttoni13-2_1.html">[1]-1（背景画像を右上に配置）</a>と同じです。 ]</span></pre>
+
+
+<pre><span class="green">[↓ このページのCSSソース ↓]</span>/
+/* 3_ytile.css */
+/* default */
+body {
+	width:100%;
+	margin:0;
+	padding:0;
+	color:#666;
+	font-family: &quot;メイリオ&quot;, Meiryo, &quot;Hiragino Kaku Gothic Pro&quot;, &quot;ヒラギノ角ゴ Pro W3&quot;, 
+	&quot;ＭＳ Ｐゴシック&quot;, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Verdana, sans-serif;
+	line-height: 18px;
+	<span style="font-size:100%;" class="red">background: #E6EE8A url(../img/tile_y.jpg) repeat-y center top;</span>
+}
+header {
+	width: 660px;
+	margin: 0px auto;
+	padding: 30px 0px;
+	color: #000;
+}
+#container {
+	width: 600px;
+	margin: 0px auto;
+	padding: 30px;
+	background: #FFF;
+	border: 1px solid #E0DADD;
+}
+以下省略</pre>
+<span><a href="css/3_ytile.css">このページのCSSソースを全部見る</a></span>
+
+</div>
+<footer>Copyright © <a href="http://honttoni.blog74.fc2.com/">ほんっとにはじめてのHTML</a> All Rights Reserved.
+</footer>
+</body>
+</html>

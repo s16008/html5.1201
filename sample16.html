@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>table</title>
+	</head>
+	<body>
+		<table>
+			<caption>来店者数</caption>
+			<colgroup id="shop" span="2"></colgroup>
+			<colgroup id="count" span="3"></colgroup>
+			<thead>
+				<tr>
+					<th colspan="2" scope="colgroup" id="area">エリア・店舗名</th>
+					<th scope="col" id="coming">来店総数</th>
+					<th scope="col" id="new">新規来店</th>
+					<th scope="col" id="repeat">リピート</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th rowspan="3" scope="rowgroup" id="area-a">A</th>
+					<th scope="row" id="shop1" headers="area area-a">渋谷店</td>
+					<td headers="shop1 coming">100</td>
+					<td headers="shop1 new">80</td>
+					<td headers="shop1 repeat">20</td>
+				</tr>
+				<tr>
+					<th scope="row" id="shop2" headers="area area-a">神宮前店</td>
+					<td headers="shop2 coming">150</td>
+					<td headers="shop2 new">100</td>
+					<td headers="shop2 repeat">50</td>
+				</tr>
+				<tr>
+					<th scope="row" id="shop3" headers="area area-a">青山店</td>
+					<td headers="shop3 coming">200</td>
+					<td headers="shop3 new">120</td>
+					<td headers="shop3 repeat">80</td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<th rowspan="2" scope="rowgroup" id="area-b">B</th>
+					<th scope="row" id="shop4" headers="area area-b">三軒茶屋店</td>
+					<td headers="shop4 coming">100</td>
+					<td headers="shop4 new">80</td>
+					<td headers="shop4 repeat">20</td>
+				</tr>
+				<tr>
+					<th scope="row" id="shop5" headers="area area-b">二子玉川店</td>
+					<td headers="shop5 coming">150</td>
+					<td headers="shop5 new">100</td>
+					<td headers="shop5 repeat">50</td>
+				</tr>
+			</tbody>
+			<tfoot>
+			<tr>
+				<th colspan="2" scope="row" id="total">合計</th>
+				<td headers="total coming">700</td>
+				<td headers="total new">480</td>
+				<td headers="total repeat">220</td>
+			</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>

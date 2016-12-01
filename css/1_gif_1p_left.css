@@ -1,0 +1,64 @@
+/* 1_gif_1p_left.css */
+/* default */
+body {
+	width:100%;
+	margin:0;
+	padding:0;
+	color:#666;
+	font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+	line-height: 18px;
+	background: #EDE8EA url(../img/tile_1p_g2.gif) no-repeat;
+}
+header {
+	width: 660px;
+	margin: 0px auto;
+	padding: 30px 0px;
+	color: #000;
+}
+h1 {
+	line-height: 1em;
+	font-size: 200%;
+}
+#container {
+	width: 600px;
+	margin: 0px auto;
+	padding: 30px;
+	background: #FFF;
+	border: 1px solid #E0DADD;
+}
+header, article, footer, aside, time ,nav { display: block; }
+pre {
+	font-size: 82%;
+	color: #93BAF5;
+	margin-bottom: 2em;
+	width: 400px;
+}
+footer {
+	width: 660px;
+	margin: 0px auto;
+	color: #FFF;
+	text-align: center;
+	padding: 10px 0px;
+	background: #000;
+	font: bold 80%/1em Arial, Helvetica, sans-serif;
+}
+
+/* color */
+.red{
+	color: #F99;
+}
+.green{
+	color: #6C9;
+}
+/* font size */
+span {
+	font-size: 80%;
+}
+/* link */
+a {
+	color: #F90;
+	text-decoration: underline;
+}
+a:hover {
+	color: #F00;
+}
